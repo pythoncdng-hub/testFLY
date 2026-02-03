@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أساطيل السماء: حرب الطائرات</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__glow"></div>
+      <nav class="hero__nav">
+        <span class="logo">أساطيل السماء</span>
+        <button id="startBtn" class="cta">ابدأ المعركة</button>
+      </nav>
+      <div class="hero__content">
+        <h1>حرب طائرات قوية جدًا</h1>
+        <p>
+          انطلق بطائرتك المقاتلة عبر الأعاصير النيونية، واجه أسراب العدو، واحمِ قواعدك الجوية
+          بمهارات خارقة وسرعة استجابة برقّية.
+        </p>
+        <div class="hero__stats">
+          <div>
+            <h3>أوضاع اللعب</h3>
+            <span>بقاء + زعيم أسطوري</span>
+          </div>
+          <div>
+            <h3>الأسلحة</h3>
+            <span>مدافع بلازما + صواريخ موجّهة</span>
+          </div>
+          <div>
+            <h3>التحدّي</h3>
+            <span>تصاعد سرعة العدو بلا حدود</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="arena">
+      <section class="hud">
+        <div class="hud__item">النتيجة: <span id="score">0</span></div>
+        <div class="hud__item">الطاقة: <span id="energy">100</span>%</div>
+        <div class="hud__item">المستوى: <span id="level">1</span></div>
+        <button id="pauseBtn" class="secondary">إيقاف مؤقت</button>
+      </section>
+
+      <section class="game">
+        <canvas id="gameCanvas" width="980" height="560" aria-label="ساحة حرب الطائرات"></canvas>
+        <div class="overlay" id="overlay">
+          <h2>جاهز للمواجهة؟</h2>
+          <p>حرّك الطائرة بالأسهم أو WASD، أطلق النار بزر المسافة، استخدم الدرع بالزر Shift.</p>
+          <button id="playBtn" class="cta">ابدأ الآن</button>
+        </div>
+      </section>
+
+      <section class="controls">
+        <h2>معدات القتال</h2>
+        <ul>
+          <li>⬅️ ➡️ ⬆️ ⬇️ أو WASD للتحكم بالحركة.</li>
+          <li>Space لإطلاق وابل البلازما.</li>
+          <li>Shift لتفعيل الدرع النبضي لثوانٍ محدودة.</li>
+          <li>اجمع وحدات الطاقة الزرقاء لاستعادة الصحة.</li>
+        </ul>
+        <div class="story">
+          <h3>قصة المعركة</h3>
+          <p>
+            بعد اختراق سرب "الشهاب الأسود" الغلاف الجوي، أصبحت آخر طيار يحمل
+            شيفرة الدفاع الجوي. تأهّب، فهذه ليست مجرد لعبة… إنها حرب مصير.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>صُمّم لتجربة سينمائية مليئة بالأدرينالين ✈️</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
